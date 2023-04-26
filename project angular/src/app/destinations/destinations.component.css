@@ -1,0 +1,143 @@
+.main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.main-body{
+    height: 100%;
+    width: 100%;
+}
+.main-back{
+   background: url(../../assets/images/1.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+    
+}
+.main-con{
+    width: 100%;
+    height: 80%;
+}
+.dest-images{
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    border: 1px black medium;
+    border-radius: 15px;
+}
+.dest-images:hover{
+    transform: scale(1.2);
+    border: 5px white solid;
+}
+.dest1{
+    background-image: url(../../assets/images/5.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+    animation: move1 3s ease;
+	left: 50px;
+    top: 230px;
+}
+@keyframes move1 {
+	0% {
+        left: 650px;
+        top: 200px;
+	}
+	100% {
+		left: 50px;
+        top: 230px;
+	}
+}
+.dest2{
+    background-image: url(../../assets/images/2.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+    animation: move2 3s ease;
+    left: 300px;
+    top: 450px;
+
+}
+@keyframes move2 {
+	0% {
+        left: 650px;
+        top: 200px;
+	}
+	100% {
+		left: 300px;
+        top: 450px;
+	}
+}
+.dest3{
+    background-image: url(../../assets/images/1.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+    animation: move3 3s ease;
+    
+	left: 650px;
+    top: 600px;
+}
+@keyframes move3 {
+	0% {
+        left: 650px;
+        top: 200px;
+	}
+	100% {
+		left: 650px;
+        top: 600px;
+	}
+}
+.dest4{
+    background-image: url(../../assets/images/3.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+    animation: move4 3s ease;
+    left: 1000px;
+    top: 450px;
+
+}
+@keyframes move4 {
+	0% {
+        left: 650px;
+        top: 200px;
+	}
+	100% {
+		left: 1000px;
+        top: 450px;
+	}
+}
+.dest5{
+    background-image: url(../../assets/images/4.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+    animation: move5 3s ease;
+    left: 1200px;
+    top: 230px;
+
+}
+
+@keyframes move5 {
+	0% {
+        left: 650px;
+        top: 200px;
+	}
+	100% {
+		left: 1200px;
+        top: 230px;
+	}
+}

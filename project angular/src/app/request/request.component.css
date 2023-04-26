@@ -1,0 +1,102 @@
+.main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.main-body{
+    height: 100%;
+    width: 100%;
+}
+.main-back{
+   background: url(../../assets/images/4.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+    
+}
+.rev-con-text h6{
+    color: black;
+    font-size: 45px;
+    max-width: 500px;
+    font-weight: 200;
+    margin: 0;
+    font-family: "Asar";
+    
+}
+.rev-con-text{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.rev-main{
+    display: flex;
+    flex-direction: row;
+}
+.rev-con2{
+    display: flex;
+    justify-content: center;
+}
+.rev-con-text p{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 20px;
+    color: black;
+    font-family: "Asar";
+
+}
+.rev-main{
+    width: 100%;
+}
+.rev-con{
+    width: 50%;
+}
+.rev-form{
+    width: 420px;
+    margin-top: 20px;
+    background-color:bisque;
+    height: 500px;
+    border-radius: 30px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+}
+.rev-form1{
+    margin-top: 30px;
+    width: 360px;
+    height: 440px;
+    background-color:navajowhite;
+    border: 1px brown solid;
+    border-radius: 20px;
+    display: block;
+
+}
+.input-to{
+    width: 320px;
+    height: 30px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px black solid;
+    margin-left: 15px;
+}
+.rev-form2{
+    margin-top: 20px;
+}
+.rev-form-button{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 250px;
+    height: 50px;
+    background-color:peru;
+    border-radius: 15px;
+    border: 1px black solid;
+    font-size: 30px;
+    font-family: "Asar";
+    font-weight: 300;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }

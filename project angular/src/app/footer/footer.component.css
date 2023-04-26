@@ -1,0 +1,29 @@
+
+.low-container{
+    width: 100%;
+    height: 100%;
+}
+.con-low{
+    bottom: 2%;
+    position: fixed;
+}
+.icons-text{
+    color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.con-icons{
+    display: flex;
+    margin-left: 74px;
+    height: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+
+}

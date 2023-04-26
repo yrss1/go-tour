@@ -1,0 +1,51 @@
+.main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.main-body{
+    height: 100%;
+    width: 100%;
+}
+.main-back{
+   background: url(../../assets/images/3.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+    
+}
+.about-body{
+    margin: 2%;
+    margin-bottom: 0;
+    width: 96%;
+}
+.about-con{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.about-con-text{
+    width: 700px;
+    font-size: 20px;
+    color: white;
+    font-family: "Asar";
+    margin: 0;
+}
+.about-text{
+    color: white;
+    font-size: 50px;
+    max-width: 500px;
+    font-weight: 200;
+    margin: 0;
+    font-family: "Asar";
+    
+}
+.crash{
+    border: 2px black medium;
+    border-radius: 25px;
+}
