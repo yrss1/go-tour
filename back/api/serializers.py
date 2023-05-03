@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Location, Tour, Review
+from .models import Location, Tour, Review, Request
 
 
 class LocationSerializer(serializers.ModelSerializer):
@@ -23,4 +23,12 @@ class ReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Review
+        fields = '__all__'
+
+
+class RequestSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+
+    class Meta:
+        model = Request
         fields = '__all__'

@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import Location, Tour, Review
+from .models import Location, Tour, Review, Request
 from .permissions import IsOwnerOrReadOnly, IsAdminOrReadOnly
-from .serializers import LocationSerializer, TourSerializer, ReviewSerializer
+from .serializers import LocationSerializer, TourSerializer, ReviewSerializer, RequestSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
 
@@ -63,3 +63,9 @@ class ReviewAPIDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
     permission_classes = (IsOwnerOrReadOnly,)
+
+
+class RequestAPICreate(generics.CreateAPIView):
+    queryset = Request.objects.all()
+    serializer_class = RequestSerializer
+    permission_classes = IsAuthenticatedOrReadOnly

@@ -31,3 +31,17 @@ class Review(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class Request(models.Model):
+    phone = models.TextField()
+    email = models.TextField()
+    location = models.ForeignKey('Location', on_delete=models.PROTECT, null=True)
+    tour = models.ForeignKey('Tour', on_delete=models.PROTECT, null=True)
+    user = models.ForeignKey(User, verbose_name='User', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.email
+
+
+
