@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DestinationsComponent } from './destinations/destinations.component';
@@ -16,6 +16,8 @@ import { SignupComponent } from './signup/signup.component';
 import { RequestComponent } from './request/request.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { DestinationDetailComponent } from './destination-detail/destination-detail.component';
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {CustomInterceptor} from "./custom.interceptor";
 
 
 @NgModule({
@@ -37,9 +39,14 @@ import { DestinationDetailComponent } from './destination-detail/destination-det
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: CustomInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

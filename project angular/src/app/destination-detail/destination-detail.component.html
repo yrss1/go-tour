@@ -1,0 +1,51 @@
+
+<div class="main">
+    <div class="main-body">
+  <div class="main-back">
+<app-header></app-header>
+<div class="dest-main">
+<div class="image">
+  <img src="{{ this.location.image}}" width="400">
+</div>
+<div class="Location">
+  <h6>{{ this.location.name}}</h6>
+</div>
+<div class="tours">
+  <div class="tour-list">
+        <div *ngFor="let tour of tours" class="review1">
+            <div class="review2">
+              <h1>{{ tour.id }}</h1>
+                <h1>
+                    {{ tour.Name}}
+                </h1>
+              <h1>
+                    {{ tour.Description }}
+                </h1>
+              <h1>
+                    {{ tour.Price }}
+                </h1>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+    <app-footer></app-footer>
+
+
+
+
+
+  </div>
+</div>
+</div>

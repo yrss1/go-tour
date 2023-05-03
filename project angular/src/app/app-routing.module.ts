@@ -9,15 +9,17 @@ import { SignupComponent } from './signup/signup.component';
 import { ReviewComponent } from './review/review.component';
 import { RequestComponent } from './request/request.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import {DestinationDetailComponent} from "./destination-detail/destination-detail.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'destinations', component: DestinationsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'review', component: ReviewComponent},
   {path: 'request', component: RequestComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: 'destinations', component: DestinationsComponent},
+  {path: 'destinations/:id', component: DestinationDetailComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent},
 ];

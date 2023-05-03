@@ -6,35 +6,26 @@
     <div class="reve-review">
         <h6>Reviews</h6>
         <div class="form-reve">
-        
-        <h3>You can leave a review</h3>
-        <form>
-            <div><input type="text" placeholder="Name"></div>
-            <div><input type="text" placeholder="Your review"> </div>
-            <button>Submit</button>
 
-        </form>
+        <h3>You can leave a review</h3>
+        <fieldset>
+            <div><input type="text" placeholder="Name" [(ngModel)]="newName"></div>
+            <div><input type="text" placeholder="Your review" [(ngModel)]="newText"> </div>
+            <button (click)="createReview()">Submit</button>
+
+        </fieldset>
     </div>
 
     </div>
     <div class="reve-list">
-        <div *ngFor="let review of reviewsList" class="review1">
+        <div *ngFor="let rev of reviews" class="review1">
             <div class="review2">
-                <p *ngIf="review.text" class="dff-text">
-                    {{ review.text }}
+                <p class="dff-text">
+                    {{ rev.text }}
                 </p>
-                <div class="review3">
-                    <p *ngIf="review.name" class="dff">
-                    {{ review.name }}
-                  </p>
-                </div>
-              
-
-              
-              
             </div>
-          
-        
+
+
         </div>
     </div>
 </div>

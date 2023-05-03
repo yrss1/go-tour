@@ -10,29 +10,30 @@
     width: 100%;
 }
 .main-back{
-   background: url(../../assets/images/6.jpg) no-repeat center center fixed; 
+   background: url(../../assets/images/6.jpg) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    height: 100%;
-    
+
 }
+
 .reve-main{
     width: 96%;
     margin: 2%;
     height: 65%;
     display: flex;
     flex-direction: row;
-    
-    
+
+
 }
 .reve-review{
     width: 400px;
     padding: 50px;
 }
 .reve-review h6{
-    
+
     color: white;
     font-size: 50px;
     max-width: 400px;
@@ -88,15 +89,16 @@
     flex-direction: column;
     text-align: center;
 }
-.form-reve form{
+.form-reve fieldset{
     width: 300px;
     margin-left: 25px;
     height: 400px;
     display: block;
+  border: none;
 }
-.form-reve form div{
+.form-reve fieldset div{
     margin-top: 30px;
-    width: 250px;
+    width: 270px;
     height: 50px;
     border-radius: 30px;
     border: 1px white solid;
@@ -105,7 +107,7 @@
     justify-content: center;
     align-items: center;
 }
-.form-reve form button{
+.form-reve fieldset button{
     margin-top: 30px;
     width: 150px;
     height: 50px;
@@ -117,12 +119,12 @@
     align-items: center;
     margin-left: 50px;
 }
-.form-reve form button:hover{
+.form-reve fieldset button:hover{
     background-color: lightblue;
 
 }
-.form-reve form div input{
-  
+.form-reve fieldset div input{
+
     border: 1px white solid;
     font-size: 20px;
     outline: 0;
