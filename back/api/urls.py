@@ -9,6 +9,7 @@ from .views import (
     ReviewAPIDetailView,
     ReviewCreateAPIView,
     RequestAPICreate,
+    RegistrationAPICreate
 )
 
 from rest_framework_simplejwt.views import (
@@ -31,5 +32,8 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
-    path('request/', RequestAPICreate.as_view())
+    path('request/', RequestAPICreate.as_view()),
+    path('registration/', RegistrationAPICreate.as_view())
+
+
 ]

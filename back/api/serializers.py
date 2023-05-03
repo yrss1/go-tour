@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Location, Tour, Review, Request
+from django.contrib.auth.models import User
 
 
 class LocationSerializer(serializers.ModelSerializer):
@@ -31,4 +32,12 @@ class RequestSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Request
+        fields = '__all__'
+
+
+class UserSerializer(serializers.ModelSerializer):
+    # user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+
+    class Meta:
+        model = User
         fields = '__all__'
